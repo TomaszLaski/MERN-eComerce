@@ -4,8 +4,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import {
 	productListReducer,
 	productDetailsReducer,
-} from "./reducers/productReducers.js";
-import { cartReducer } from "./reducers/cartReducers.js";
+} from "./reducers/productReducers";
+import { cartReducer } from "./reducers/cartReducers";
 
 const reducer = combineReducers({
 	productList: productListReducer,

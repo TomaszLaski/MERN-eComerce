@@ -1,9 +1,9 @@
-import express from "express";
-const router = express.Router();
-import { addOrderItems, getOrderByID } from "../controlers/orderController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import express from 'express'
+const router = express.Router()
+import { addOrderItems, getOrderById } from '../controllers/orderController.js'
+import { protect } from '../middleware/authMiddleware.js'
 
-router.route("/").post(protect, addOrderItems);
-router.route("/:id").get(protect, getOrderByID);
+router.route('/').post(protect, addOrderItems)
+router.route('/:id').get(protect, getOrderById)
 
-export default router;
+export default router

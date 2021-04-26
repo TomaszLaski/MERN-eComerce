@@ -28,7 +28,7 @@ const ShippingScreen = ({ history }) => {
 			<h1>Shipping</h1>
 			<Form onSubmit={submitHandler}>
 				<Form.Group controlId="address">
-					<Form.Label>Name</Form.Label>
+					<Form.Label>Address</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Enter address"
@@ -37,8 +37,9 @@ const ShippingScreen = ({ history }) => {
 						onChange={(e) => setAddress(e.target.value)}
 					></Form.Control>
 				</Form.Group>
+
 				<Form.Group controlId="city">
-					<Form.Label>Name</Form.Label>
+					<Form.Label>City</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Enter city"
@@ -47,8 +48,9 @@ const ShippingScreen = ({ history }) => {
 						onChange={(e) => setCity(e.target.value)}
 					></Form.Control>
 				</Form.Group>
+
 				<Form.Group controlId="postalCode">
-					<Form.Label>Name</Form.Label>
+					<Form.Label>Postal Code</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Enter postal code"
@@ -57,8 +59,9 @@ const ShippingScreen = ({ history }) => {
 						onChange={(e) => setPostalCode(e.target.value)}
 					></Form.Control>
 				</Form.Group>
+
 				<Form.Group controlId="country">
-					<Form.Label>Name</Form.Label>
+					<Form.Label>Country</Form.Label>
 					<Form.Control
 						type="text"
 						placeholder="Enter country"

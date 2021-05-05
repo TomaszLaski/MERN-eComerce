@@ -1,0 +1,29 @@
+{
+  "name": "mern-shop-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "repository": "https://github.com/TomaszLaski/MERN-eComerce-.git",
+  "author": "TomaszLaski <tomasz.laski0001@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "yarn --cwd ./frontend start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
